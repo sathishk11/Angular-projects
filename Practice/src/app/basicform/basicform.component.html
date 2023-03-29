@@ -1,0 +1,23 @@
+<h1>Basic Form</h1>
+<form #basicform="ngForm" (submit)=GetData(basicform.value)>
+    UserName :
+    <input ngModel type="text" name="username" />
+    <br><br>
+    Email :
+    <input ngModel type="text" name="Email" />
+    <br><br>
+    Mobile :
+    <input ngModel type="text" name="mobile" />
+    <br><br>
+    <button>Submit</button>
+</form>
+<br>
+<button (click)="Toggle()">Toggle</button>
+
+<div *ngIf="show">
+    <ul>
+        <li>{{dataobject.username}}</li>
+        <li>{{dataobject.Email}}</li>
+        <li>{{dataobject.mobile}}</li>
+    </ul>
+</div>

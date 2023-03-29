@@ -1,0 +1,8 @@
+{
+    "/login":{
+        "target" : "http://mplr.net7.co.in/api/REPL/Employee/LoginCheck",
+        "secure" : false,
+        "logLevel" : "debug",
+        "changeOrigin" : true
+    }
+}

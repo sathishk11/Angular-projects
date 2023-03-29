@@ -1,0 +1,28 @@
+<h1>{{title}}</h1>
+
+<ul> Name List:
+    <li *ngFor="let item of userarray">{{item | uppercase}}</li>
+</ul>
+
+<table>
+  <thead> Details :
+      <tr>
+          <td>Name</td>
+          <td>Salary</td>
+          <td>Location</td>
+          <td>Skills</td>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of userlist">
+      <td>{{item.name}}</td>
+      <td>{{item.salary}}</td>
+      <td>{{item.location}}</td>
+      <td>
+        <ul>
+            <li *ngFor="let skill of item.skillset">{{skill}}</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>

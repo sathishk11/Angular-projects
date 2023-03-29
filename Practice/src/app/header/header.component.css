@@ -1,0 +1,17 @@
+nav img {
+    width: 60px;
+}
+nav ul{
+    float: right;
+}
+li a{
+    text-decoration: solid;
+    padding: 10px;
+    color: black;
+}
+li{
+    display: inline-block;
+}
+nav{
+    background-color: aquamarine;
+}

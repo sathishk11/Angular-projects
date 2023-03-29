@@ -1,0 +1,18 @@
+<h1>Form</h1>
+<form #basicform="ngForm" (submit)=getData(basicform.value)>
+    <div class="form-group">
+        Name :
+        <input ngModel type="text" name="name" />
+    </div><br>
+    <div class="form-group">
+        Location :
+        <input ngModel type="text" name="location" />
+    </div><br>
+    <button>Submit</button>
+</form>
+<div>
+<ul>
+    <a href="#" style="color: rgb(255, 136, 0);">{{dataobject.name}}</a><br>
+    <a href="#" style="color: green;">{{dataobject.location}}</a>
+</ul>
+</div>

@@ -1,0 +1,23 @@
+<p style="color: #880712; font-size: xx-large;">{{title}}</p>
+
+<h2 *ngIf="boolvalue else elsediv"> Welcome </h2>
+<ng-template #elsediv>
+  <h2 style="color: magenta">You are not welcome</h2> 
+  </ng-template>
+
+<ng-template [ngIf]="color==='red'">
+<h2 style="color: red">Go to hell</h2>
+</ng-template>
+<ng-template [ngIf]="color==='green'">
+  <h2 style="color: green">Go to hell</h2>
+  </ng-template>
+  <ng-template [ngIf]="color==='blue'">
+<h2 style="color: blue">Go to hell</h2>
+</ng-template>
+
+<div [ngSwitch]=color>
+  <h2 *ngSwitchCase='"red"' style="color: red">Go to hell</h2>
+  <h2 *ngSwitchCase='"green"' style="color: green">Go to hell</h2>
+  <h2 *ngSwitchCase='"blue"' style="color: blue">Go to hell</h2>
+  <h2 *ngSwitchDefault>Default</h2>
+</div>

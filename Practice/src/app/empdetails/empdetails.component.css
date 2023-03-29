@@ -1,0 +1,23 @@
+h1{
+    width: 20%;
+    border: 1px;
+    border-style: double;
+    color: rgb(45, 196, 14);
+}
+table {
+    width: 30%;
+    border-collapse: separate;
+    margin-bottom: 20px;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+  }
+  th {
+    background-color: #ccc;
+  }
+  li{
+    color: blue;
+    font-size: 100%;
+  }
